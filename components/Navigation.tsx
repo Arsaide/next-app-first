@@ -20,7 +20,7 @@ const Navigation = ({navLinks}: Props) => {
 
                 return (
                   <Link
-
+                    key={link.label}
                     href={link.href}
                     className={isActive ? 'active' : ''}
                   >{link.label}</Link>
